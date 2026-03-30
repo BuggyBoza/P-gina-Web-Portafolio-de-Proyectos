@@ -334,10 +334,10 @@ export default function Home() {
           <div className="text-left">
             <p className="text-xs text-zinc-500 uppercase tracking-widest">Email</p>
             <a
-              href="lchavezbocv@gmail.com"
+              href="mailto:lchavezbocv@gmail.com"
               className="text-zinc-200 font-medium hover:text-amber-400 transition"
-            >
-              lchavezbocv@gmail.com
+                >
+                lchavezbocv@gmail.com
             </a>
           </div>
         </div>
