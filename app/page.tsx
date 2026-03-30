@@ -129,7 +129,7 @@ export default function Home() {
   const [section, setSection] = useState<
     "hero" | "projects" | "skills" | "contact"
   >("hero");
-
+  const [copied, setCopied] = useState(false);
   const labels = ["Inicio", "Proyectos", "Skills", "Contacto"];
   const targets = ["hero", "projects", "skills", "contact"] as const;
 
@@ -329,81 +329,83 @@ export default function Home() {
         </div>
 
         {/* EMAIL */}
-        <div className="flex items-center gap-4 border-b border-zinc-800 pb-4 relative z-10">
-          <span className="text-xl">✉️</span>
-          <div className="text-left">
-            <p className="text-xs text-zinc-500 uppercase tracking-widest">Email</p>
-            <a
-              href="mailto:lchavezbocv@gmail.com"
-              className="text-zinc-200 font-medium hover:text-amber-400 transition"
-                >
-                lchavezbocv@gmail.com
-            </a>
-          </div>
-        </div>
+<div className="flex items-center gap-4 border-b border-zinc-800 pb-4 relative z-10">
+  <span className="text-xl">✉️</span>
+  <div className="text-left">
+    <p className="text-xs text-zinc-500 uppercase tracking-widest">Email</p>
 
-        {/* LINKEDIN */}
-        <div className="flex items-center gap-4 border-b border-zinc-800 pb-4 relative z-10">
-          <span className="text-xl">💼</span>
-          <div className="text-left">
-            <p className="text-xs text-zinc-500 uppercase tracking-widest">LinkedIn</p>
-            <a
-              href="https://www.linkedin.com/in/lchavezbo/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-200 font-medium hover:text-amber-400 transition"
-            >
-              Ver perfil
-            </a>
-          </div>
-        </div>
+    <p
+      onClick={() => {
+        navigator.clipboard.writeText("lchavezbocv@gmail.com");
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }}
+      className="text-zinc-200 font-medium cursor-pointer hover:text-amber-400 transition"
+    >
+      {copied ? "¡Copiado! ✅" : "lchavezbocv@gmail.com"}
+    </p>
 
-        {/* CV */}
-        <div className="flex items-center gap-4 relative z-10">
-          <span className="text-xl">📄</span>
-          <div className="text-left">
-            <p className="text-xs text-zinc-500 uppercase tracking-widest">CV</p>
-            <a
-              href="/CV - Fernando Chávez Boza.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-200 font-medium hover:text-amber-400 transition"
-            >
-              Ver CV
-            </a>
-          </div>
-        </div>
+  </div>
+</div>
 
-      </div>
+{/* LINKEDIN */}
+<div className="flex items-center gap-4 border-b border-zinc-800 pb-4 relative z-10">
+  <span className="text-xl">💼</span>
+  <div className="text-left">
+    <p className="text-xs text-zinc-500 uppercase tracking-widest">LinkedIn</p>
+    <a
+      href="https://www.linkedin.com/in/lchavezbo/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-zinc-200 font-medium hover:text-amber-400 transition"
+    >
+      Ver perfil
+    </a>
+  </div>
+</div>
 
-      {/* BOTONES */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+{/* CV */}
+<div className="flex items-center gap-4 relative z-10">
+  <span className="text-xl">📄</span>
+  <div className="text-left">
+    <p className="text-xs text-zinc-500 uppercase tracking-widest">CV</p>
+    <a
+      href="/CV - Fernando Chávez Boza.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-zinc-200 font-medium hover:text-amber-400 transition"
+    >
+      Ver CV
+    </a>
+  </div>
+</div>
 
-        {/* EMAIL */}
-        <p className="text-zinc-200 font-medium select-all cursor-pointer">
-  lchavezbocv@gmail.com
-</p>
-        {/* WHATSAPP 🔥 */}
-        <a
-          href="https://wa.me/51920994640"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-8 py-4 bg-green-500 text-black rounded-full font-bold text-sm hover:bg-green-400 transition-colors"
-        >
-          WhatsApp
-        </a>
+</div>
 
-        {/* CV */}
-        <a
-          href="/CV - Fernando Chávez Boza.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-8 py-4 border border-zinc-700 text-zinc-300 rounded-full font-bold text-sm hover:border-zinc-500 hover:text-white transition-all"
-        >
-          Descargar CV
-        </a>
+{/* BOTONES */}
+<div className="flex flex-col sm:flex-row gap-4 justify-center">
 
-      </div>
+  {/* WHATSAPP */}
+  <a
+    href="https://wa.me/51920994640"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-8 py-4 bg-green-500 text-black rounded-full font-bold text-sm hover:bg-green-400 transition-colors"
+  >
+    WhatsApp
+  </a>
+
+  {/* CV */}
+  <a
+    href="/CV - Fernando Chávez Boza.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-8 py-4 border border-zinc-700 text-zinc-300 rounded-full font-bold text-sm hover:border-zinc-500 hover:text-white transition-all"
+  >
+    Descargar CV
+  </a>
+
+  </div>
 
     </div>
   </section>
