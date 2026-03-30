@@ -380,15 +380,11 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
         {/* EMAIL */}
-<button
-  onClick={() => {
-    navigator.clipboard.writeText("lchavezbocv@gmail.com");
-    alert("Correo copiado 📋");
-  }}
-  className="px-8 py-4 bg-amber-400 text-black rounded-full font-bold text-sm hover:bg-amber-300 transition-colors hover:shadow-lg hover:shadow-amber-400/20"
+        <a
+  href="mailto:lchavezbocv@gmail.com?subject=Contacto%20desde%20portafolio&body=Hola%20Luis,%20quiero%20trabajar%20contigo"
 >
-  Copiar correo
-</button>
+  Enviar correo
+</a>
         {/* WHATSAPP 🔥 */}
         <a
           href="https://wa.me/51920994640"
