@@ -334,10 +334,10 @@ export default function Home() {
           <div className="text-left">
             <p className="text-xs text-zinc-500 uppercase tracking-widest">Email</p>
             <a
-              href="chavezbozafer@gmail.com"
+              href="lchavezbocv@gmail.com"
               className="text-zinc-200 font-medium hover:text-amber-400 transition"
             >
-              chavezbozafer@gmail.com
+              lchavezbocv@gmail.com
             </a>
           </div>
         </div>
@@ -348,7 +348,7 @@ export default function Home() {
           <div className="text-left">
             <p className="text-xs text-zinc-500 uppercase tracking-widest">LinkedIn</p>
             <a
-              href="https://www.linkedin.com/in/fernando-ch%C3%A1vez-016a33381/"
+              href="https://www.linkedin.com/in/lchavezbo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-200 font-medium hover:text-amber-400 transition"
@@ -381,7 +381,7 @@ export default function Home() {
 
         {/* EMAIL */}
 <a
-  href="mailto:chavezbozafer@gmail.com?subject=Contacto%20desde%20portafolio&body=Hola%20Luis,%20quiero%20trabajar%20contigo"
+  href="mailto:lchavezbocv@gmail.com?subject=Contacto%20desde%20portafolio&body=Hola%20Luis,%20quiero%20trabajar%20contigo"
   className="px-8 py-4 bg-amber-400 text-black rounded-full font-bold text-sm hover:bg-amber-300 transition-colors hover:shadow-lg hover:shadow-amber-400/20"
 >
   Enviar correo
