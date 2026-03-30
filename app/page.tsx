@@ -380,7 +380,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
         {/* EMAIL */}
-        <p className="px-8 py-4 bg-amber-400 text-black rounded-full font-bold text-sm">
+        <p className="text-zinc-200 font-medium select-all cursor-pointer">
   lchavezbocv@gmail.com
 </p>
         {/* WHATSAPP 🔥 */}
