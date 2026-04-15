@@ -11,6 +11,14 @@ const projects = [
     link: "https://github.com/BuggyBoza/Proyecto-de-automatizaci-n-para-la-empresa-CONFECCIONES-LANDI-EIRL",
   },
   {
+    title: "Xclusive (Barbería): Automatización de Flujo de Caja, Ingresos y Comisiones con Dashboard en Tiempo Real",
+    description:
+      "Diseñé e implementé un sistema de automatización financiera en Google Sheets + Apps Script para registrar ingresos por productos y servicios, egresos y comisiones por barbero. Desarrollé un flujo de caja dinámico y dashboards en Looker Studio con visualización en tiempo real para el control de liquidez y toma de decisiones.",
+    tech: ["Google Sheets", "Apps Script", "Looker Studio"],
+    category: "Automatización y análisis de información",
+    link: "https://github.com/BuggyBoza/Proyecto-de-automatizaci-n-para-la-empresa-Xclusive.git",
+  },
+  {
     title: "Precio del Oro en Tiempo Real (2000 - Actualidad)",
     description:
       "Construí un dashboard en Power BI con datos automatizados vía Python, para analizar la evolución del oro y métricas financieras.",
@@ -200,7 +208,7 @@ export default function Home() {
               <div className="flex gap-10">
                 {[
                   { value: "2+", label: "Años de experiencia" },
-                  { value: "3+", label: "Proyectos entregados" },
+                  { value: "4+", label: "Proyectos entregados" },
                   { value: "5", label: "Herramientas dominadas" },
                 ].map(({ value, label }) => (
                   <div key={label}>
